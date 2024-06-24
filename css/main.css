@@ -1,0 +1,63 @@
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: 10px "Amatic SC", sans-serif;
+    --nav-font: "Inter", sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    /* Use flexbox for the header */
+    /* Align items to the right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img_logo_watchyouwant {
+    justify-content: flex-start;
+    display: inline-block;
+    vertical-align: middle;
+    height: 45px;
+    width: 200px;
+    margin-right: 20px;
+    /* Add margin-right for spacing */
+}
+
+.botao_assinar,
+.botao_acessar {
+    justify-content: flex-end;
+    font: var(--heading-font);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 0;
+}
+
+.botao_acessar {
+    background-color: transparent;
+    color: #804820;
+}
+
+.botao_assinar {
+    background-color: #804820;
+    color: white;
+}
+
+.botao_assinar:hover {
+    background-color: #976c4e;
+}
