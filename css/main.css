@@ -310,3 +310,61 @@ header {
 .titulo-sessao-beneficios::after {
     margin-left: 1rem;
 }
+
+.row-superior-beneficios,
+.row-inferior-beneficios {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.card-beneficios {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    border: 2px solid black;
+    /* Adiciona a borda preta */
+    border-radius: 10px;
+    /* Arredonda os cantos */
+    padding: 20px;
+    /* Adiciona espaço dentro do card */
+}
+
+.card-beneficios:last-child {
+    /* Estiliza o último card de cada linha */
+    margin-right: 0;
+}
+
+h3 {
+    font-size: 20px;
+    /* Tamanho da fonte dos títulos dos planos */
+    margin-bottom: 10px;
+    /* Espaço abaixo dos títulos dos planos */
+}
+
+.price {
+    font-size: 18px;
+    /* Tamanho da fonte do preço */
+    margin-bottom: 10px;
+    /* Espaço abaixo do preço */
+}
+
+ul {
+    list-style: none;
+    /* Remove os marcadores padrão da lista */
+    padding: 0;
+    /* Remove o espaçamento padrão da lista */
+}
+
+li {
+    margin-bottom: 10px;
+    /* Espaço entre os itens da lista */
+}
+
+.icone-beneficio {
+    height: 80px;
+    width: 80px;
+}
