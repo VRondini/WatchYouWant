@@ -22,19 +22,56 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/carousel.js"></script>
+
 </head>
 
 <body class="index-page">
     <header id="header" class="header_watchyouwant">
-        <a href="index.html" class="logo_watchyouwant">
-            <img class="img_logo_watchyouwant" src="img/LogoProjetoStreaming.png" alt="Home">
-        </a>
-        <div class="espaco_entre_botoes_header">
-
+        <div class="logo_header">
+            <a href="index.html" class="logo_watchyouwant">
+                <img class="img_logo_watchyouwant" src="img/LogoProjetoStreaming.png" alt="Home">
+            </a>
         </div>
-        <a href="login.html" class="botao_acessar">Entrar</a>
-        <a href="signup.html" class="botao_assinar">Assine</a>
+        <div class="botoes_header">
+            <a href="login.html" class="botao_acessar">Entrar</a>
+            <a href="signup.html" class="botao_assinar">Assine</a>
+        </div>
     </header>
+    <div class="sessao-slogan-inicial-watchyouwant">
+        <div class="sessao-titulo-slogan-inicial-watchyouwant">
+            <span>Do </span>
+            <span class="colored-text">sucesso</span>
+            <span>das telonas, para </span>
+            <span class="colored-text">sua</span>
+            <span> TV!</span>
+        </div>
+        <div class="sessao-subtitulo-slogan-inicial-watchyouwant">
+            <span>A apenas</span>
+            <span class="colored-text">um</span>
+            <span>clique de distância.</span>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner1.png" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.png" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner3.png" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="sessao-selecionar-plano">
+        <h2 class="titulo-sessao-selecionar-plano">
+            Selecione seu plano
+        </h2>
+    </div>
 </body>
 
 </html>
