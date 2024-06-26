@@ -1,4 +1,5 @@
 let currentIndex = 0;
+let intervalId;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
@@ -11,6 +12,9 @@ function showSlide(index) {
     }
     const offset = -currentIndex * 100;
     document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+
+    clearInterval(intervalId);
+    startInterval();
 }
 
 function nextSlide() {
@@ -21,3 +25,8 @@ function prevSlide() {
     showSlide(currentIndex - 1);
 }
 
+function startInterval() {
+    intervalId = setInterval(nextSlide, 7000);
+}
+
+startInterval();

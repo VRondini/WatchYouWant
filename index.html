@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
 
@@ -30,7 +31,7 @@
     <header id="header" class="header_watchyouwant">
         <div class="logo_header">
             <a href="index.html" class="logo_watchyouwant">
-                <img class="img_logo_watchyouwant" src="img/icons/LogoProjetoStreaming.png" alt="Home">
+                <img class="img_logo_watchyouwant" src="img/icons/LogoProjetoStreamingDarkMode.png" alt="Home">
             </a>
         </div>
         <div class="botoes_header">
@@ -40,32 +41,28 @@
     </header>
     <div class="sessao-slogan-inicial-watchyouwant">
         <div class="sessao-titulo-slogan-inicial-watchyouwant">
-            <span>Do </span>
-            <span class="colored-text">sucesso</span>
-            <span>das telonas, para </span>
-            <span class="colored-text">sua</span>
-            <span> TV!</span>
+            <span>Do sucesso das telonas, para sua TV!</span>
         </div>
         <div class="sessao-subtitulo-slogan-inicial-watchyouwant">
-            <span>A apenas</span>
-            <span class="colored-text">um</span>
-            <span>clique de distância.</span>
+            <span>A apenas um clique de distância.</span>
         </div>
     </div>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/carrossel/banner1.png" alt="Image 1">
+    <div class="background-carrossel">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carrossel/banner1.png" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carrossel/banner2.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carrossel/banner3.png" alt="Image 3">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/carrossel/banner2.png" alt="Image 2">
-            </div>
-            <div class="carousel-item">
-                <img src="img/carrossel/banner3.png" alt="Image 3">
-            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
         </div>
-        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
     </div>
     <div class="sessao-selecionar-plano">
         <h2 class="titulo-sessao-selecionar-plano">
@@ -128,7 +125,8 @@
                     <img class="icone-beneficio" src="img/icons/adfreeicon.png" alt="AdfreeIcon">
                     <div class="texto-beneficio">
                         <h3>Divirta-se sem pausas!</h3>
-                        <p class="descricao-beneficio">Independente do plano escolhido, você não será interrompido por nenhum anúncio!</p>
+                        <p class="descricao-beneficio">Independente do plano escolhido, você não será interrompido por
+                            nenhum anúncio!</p>
                     </div>
                 </div>
             </div>
@@ -137,18 +135,21 @@
                     <img class="icone-beneficio" src="img/icons/multiplatformicon.png" alt="MultiPlatformIcon">
                     <div class="texto-beneficio">
                         <h3>WatchYouWant, em qualquer lugar!</h3>
-                        <p class="descricao-beneficio">Assista em seu celular no ônibus ou, no conforto do seu sofá, na sua Smart TV!</p>
+                        <p class="descricao-beneficio">Assista em seu celular no ônibus ou, no conforto do seu sofá, na
+                            sua Smart TV!</p>
                     </div>
                 </div>
                 <div class="card-beneficios">
                     <img class="icone-beneficio" src="img/icons/updateicon.png" alt="UpdateIcon">
                     <div class="texto-beneficio">
                         <h3>Novidades toda semana!</h3>
-                        <p class="descricao-beneficio">O catálogo de filmes e séries é atualizado toda semana para que você nunca fique
+                        <p class="descricao-beneficio">O catálogo de filmes e séries é atualizado toda semana para que
+                            você nunca fique
                             entediado!</p>
                     </div>
                 </div>
-            </div><div class="row-inferior-beneficios">
+            </div>
+            <div class="row-inferior-beneficios">
                 <div class="card-beneficios">
                     <img class="icone-beneficio" src="img/icons/customizableicon.png" alt="MultiPlatformIcon">
                     <div class="texto-beneficio">
@@ -166,10 +167,64 @@
             </div>
         </div>
     </div>
-    
-    <div class="sessao-produtos">
-        <p>Assista a tudo, a qualquer hora. Filmes, séries e muito mais, tudo isso em um só lugar.</p>
+    <div class="sessao-slogan-produtos">
+        <p>Assista a tudo, a qualquer hora.</p>
+        <p>Filmes, séries e muito mais, tudo isso em um só lugar.</p>
     </div>
+    <div class="sessao-produtos">
+        <div class="row-produtos">
+            <div class="col-div-prod">
+                <div class="card-produtos">
+                    <img class="vertical-poster" src="img/produtos/john-wick-vertical-banner.png" alt="JohnWickPoster">
+                    <div class="overlay-title-produto">John Wick</div>
+                    <div class="overlay-text-produto">Filmes</div>
+                </div>
+            </div>
+            <div class="col-div-prod">
+                <div class="card-produtos">
+                    <img class="vertical-poster" src="img/produtos/breaking-bad-vertical-banner.png"
+                        alt="JohnWickPoster">
+                    <div class="overlay-title-produto">Breaking Bad</div>
+                    <div class="overlay-text-produto">Séries</div>
+                </div>
+            </div>
+            <div class="col-div-prod">
+                <div class="card-produtos">
+                    <img class="vertical-poster" src="img/produtos/our-planet-vertical-banner.png" alt="JohnWickPoster">
+                    <div class="overlay-title-produto">Our Planet</div>
+                    <div class="overlay-text-produto">Documentários</div>
+                </div>
+            </div>
+            <div class="col-div-prod">
+                <div class="card-produtos">
+                    <img class="vertical-poster" src="img/produtos/peppa-pig-vertical-banner.png" alt="JohnWickPoster">
+                    <div class="overlay-title-produto">Peppa Pig</div>
+                    <div class="overlay-text-produto">Kids</div>
+                </div>
+            </div>
+            <div class="col-div-prod">
+                <div class="card-produtos">
+                    <img class="vertical-poster" src="img/produtos/demon-slayer-vertical-banner.png"
+                        alt="JohnWickPoster">
+                    <div class="overlay-title-produto">Demon Slayer</div>
+                    <div class="overlay-text-produto">Animes</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="LogoRodape">
+            <img class="img_rodape_logo_watchyouwant" src="img/icons/LogoProjetoStreamingDarkMode.png" alt="LogoRodape">
+        </div>
+        <div class="footer-links">
+            <a href="#politica-de-privacidade">Política de Privacidade</a>
+            <a href="#entre-em-contato">Entre em Contato</a>
+            <a href="#guia-de-classificacao-indicativa">Guia de Classificação Indicativa</a>
+            <a href="#protecao-dos-dados">Proteção dos Dados</a>
+        </div>
+        <p>Desenvolvido por Vinicius Rondini Ferreira, 2024.</p>
+    </footer>
 </body>
 
 </html>
