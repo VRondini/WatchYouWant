@@ -71,13 +71,18 @@ header {
     color: var(--background-color);
 }
 
+.botao_acessar:hover {
+    color: var(--hover-color);
+}
+
 .botao_assinar {
-    background-color: var(--default-color);
-    color: white;
+    background-color: var(--hover-color);
+    color: var(--background-color);
 }
 
 .botao_assinar:hover {
-    background-color: var(--hover-color);
+    background-color: var(--background-color);
+    color: black;
 }
 
 .sessao-slogan-inicial-watchyouwant {
