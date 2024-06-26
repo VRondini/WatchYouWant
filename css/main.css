@@ -325,7 +325,8 @@ header {
 }
 
 .row-superior-beneficios,
-.row-inferior-beneficios {
+.row-inferior-beneficios,
+.row-medio-beneficios {
     display: flex;
     justify-content: space-evenly;
 }
@@ -334,7 +335,7 @@ header {
     display: flex;
     align-items: center;
     width: 45%;
-    height: 120px;
+    height: 140px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
