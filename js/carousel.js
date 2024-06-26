@@ -21,7 +21,3 @@ function prevSlide() {
     showSlide(currentIndex - 1);
 }
 
-// Optional: Auto play the carousel every 3 seconds
-setInterval(() => {
-    nextSlide();
-}, 7000);
