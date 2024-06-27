@@ -3,6 +3,7 @@ let intervalId;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
+    const indicators = document.querySelectorAll('.carousel-indicators .indicator');
     if (index >= slides.length) {
         currentIndex = 0;
     } else if (index < 0) {
@@ -12,6 +13,11 @@ function showSlide(index) {
     }
     const offset = -currentIndex * 100;
     document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+
+    // Atualiza os indicadores
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === currentIndex);
+    });
 
     clearInterval(intervalId);
     startInterval();
@@ -23,6 +29,10 @@ function nextSlide() {
 
 function prevSlide() {
     showSlide(currentIndex - 1);
+}
+
+function currentSlide(index) {
+    showSlide(index - 1);
 }
 
 function startInterval() {

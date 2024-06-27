@@ -171,6 +171,27 @@ header {
     right: 10px;
 }
 
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicators .indicator {
+    width: 12px;
+    height: 12px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators .indicator.active {
+    background-color: var(--default-color);
+}
+
 /*SESSÃO SELECIONAR PLANO*/
 
 .titulo-sessao-selecionar-plano {
