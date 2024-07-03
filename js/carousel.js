@@ -40,3 +40,20 @@ function startInterval() {
 }
 
 startInterval();
+
+document.querySelectorAll('.card-produtos').forEach(card => {
+    card.addEventListener('mouseover', () => {
+        document.querySelectorAll('.card-produtos').forEach(otherCard => {
+            if (otherCard !== card) {
+                otherCard.style.opacity = '0';
+            }
+        });
+    });
+
+    card.addEventListener('mouseout', () => {
+        document.querySelectorAll('.card-produtos').forEach(otherCard => {
+            otherCard.style.opacity = '1';
+        });
+    });
+});
+
