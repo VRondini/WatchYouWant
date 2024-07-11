@@ -85,6 +85,55 @@ header {
     color: black;
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--default-font);
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.botoes_header_sidebar a {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: 1px solid white;
+    justify-content: center;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 .sessao-slogan-inicial-watchyouwant {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -557,13 +606,30 @@ header {
     }
 
     .img_logo_watchyouwant {
-        width: 100%;
+        width: 65%;
         margin: 0;
     }
 
     .botoes_header {
-        justify-content: center;
-        margin-top: 10px;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .botoes_header a {
+        display: block;
+        padding: 15px;
+        background-color: #333;
+        border-bottom: 1px solid #444;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--background-color);
+    }
+
+    .botoes_header.show {
+        display: flex;
     }
 
     .carousel {
